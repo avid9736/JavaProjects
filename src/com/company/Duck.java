@@ -2,6 +2,17 @@ package com.company;
 
 public abstract class Duck {
 
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
+
+    void performFly(){
+        flyBehavior.fly();
+    }
+
+    void performQuack(){
+        quackBehavior.quack();
+    }
+
     void swim() {
         System.out.print("swimming | ");
     }
@@ -10,38 +21,29 @@ public abstract class Duck {
 
 }
 
-class MallardDuck extends Duck implements Flyable, Quackable {
+class MallardDuck extends Duck {
+
+    public MallardDuck() {
+        flyBehavior = new FlyWithWings();
+        quackBehavior = new Quack();
+    }
 
     @Override
     void display() {
         System.out.print("\ndisplay MallardDuck: ");
     }
-
-    @Override
-    public void fly() {
-        System.out.print("flying | ");
-    }
-
-    @Override
-    public void quack() {
-        System.out.print("quacking | ");
-    }
 }
 
-class RedheadDuck extends Duck implements Flyable, Quackable {
+class RedheadDuck extends Duck {
+
+    public RedheadDuck() {
+        flyBehavior = new FlyWithWings();
+        quackBehavior = new Quack();
+    }
 
     @Override
     void display() {
         System.out.print("\ndisplay RedheadDuck: ");
     }
 
-    @Override
-    public void fly() {
-        System.out.print("flying | ");
-    }
-
-    @Override
-    public void quack() {
-        System.out.print("quacking | ");
-    }
 }

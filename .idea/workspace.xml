@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e48a884-721c-41aa-aefc-20a99795387d" name="Default" comment="" />
+    <list default="true" id="6e48a884-721c-41aa-aefc-20a99795387d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/FlyBehavior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/FlyNoWay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/FlyWithWings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/MuteQuack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Quack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/QuackBehavior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Squeak.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/FlyBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/QuackBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/DecoyDuck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/DecoyDuck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Duck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Duck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/MallardDuck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/MallardDuck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Quackable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/RedheadDuck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/RedheadDuck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/RubberDuck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/RubberDuck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DecoyDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DecoyDuck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Duck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Flyable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Quackable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RubberDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RubberDuck.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,36 +40,82 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Duck.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Duck.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Duck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+            <state relative-caret-position="378">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding>
-                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#68#69#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RubberDuck.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DecoyDuck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/DecoyDuck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RubberDuck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/RubberDuck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
               <folding>
-                <element signature="e#95#96#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlyBehavior.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/FlyBehavior.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
                 <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuackBehavior.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/QuackBehavior.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,6 +127,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -65,16 +137,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Duck.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DecoyDuck.java" />
         <option value="$PROJECT_DIR$/src/com/company/RubberDuck.java" />
+        <option value="$PROJECT_DIR$/src/com/company/QuackBehavior.java" />
+        <option value="$PROJECT_DIR$/src/com/company/FlyBehavior.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
-    <option name="height" value="1076" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -166,7 +240,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="22" width="960" height="1054" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1075" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -177,40 +251,59 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33751306" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33026585" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3291536" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12193823" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924336" />
       <window_info id="Learn" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997955" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945533" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299285" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Learn" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JavaProjects.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Quackable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -219,24 +312,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Flyable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/RubberDuck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -246,50 +328,102 @@
         <state relative-caret-position="660">
           <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
           <folding>
-            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Quackable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Flyable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DecoyDuck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RubberDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/QuackBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/FlyBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Duck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        <state relative-caret-position="378">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding>
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RubberDuck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
           </folding>
         </state>
       </provider>

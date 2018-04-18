@@ -3,20 +3,21 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        Duck malDuck1 = new MallardDuck();
+        malDuck1.display(); malDuck1.swim();
+        malDuck1.performFly(); malDuck1.performQuack();
 
-        MallardDuck malDuck1 = new MallardDuck();
-        RedheadDuck redheadDuck1 = new RedheadDuck();
-        RubberDuck rubberDuck1 = new RubberDuck();
-        DecoyDuck decoyDuck1 = new DecoyDuck();
+        Duck redDuck1 = new RedheadDuck();
+        redDuck1.display(); redDuck1.swim();
+        redDuck1.performFly(); redDuck1.performQuack();
 
-        malDuck1.display(); malDuck1.swim(); malDuck1.quack(); malDuck1.fly();
+        Duck decDuck1 = new DecoyDuck();
+        decDuck1.display(); decDuck1.swim();
+        decDuck1.performQuack(); decDuck1.performFly();
 
-        redheadDuck1.display(); redheadDuck1.swim(); redheadDuck1.quack(); redheadDuck1.fly();
+        Duck rubDuck1 = new RubberDuck();
+        rubDuck1.display(); rubDuck1.swim();
+        rubDuck1.performQuack(); rubDuck1.performFly();
 
-        rubberDuck1.display(); rubberDuck1.swim(); rubberDuck1.quack();
-        //rubberDuck1.fly(); // can't fly
-
-        decoyDuck1.display(); decoyDuck1.swim();
-        //decoyDuck1.quack(); decoyDuck1.fly(); // can't quack nor fly
     }
 }
