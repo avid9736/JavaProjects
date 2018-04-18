@@ -1,18 +1,14 @@
 package com.company;
 
-public class RubberDuck extends Duck {
+public class RubberDuck extends Duck implements Quackable{
 
     @Override
     void display() {
         System.out.print("\ndisplay RubberDuck: ");
     }
 
-    void quack(){
+    @Override
+    public void quack() {
         System.out.print("squeaking | ");
     }
-
-    void fly(){
-        System.out.print("not flying | ");
-    }
-    
 }
