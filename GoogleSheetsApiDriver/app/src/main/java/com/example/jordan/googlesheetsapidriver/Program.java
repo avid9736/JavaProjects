@@ -1,26 +1,16 @@
 package com.example.jordan.googlesheetsapidriver;
 
-import com.example.jordan.googlesheetsapidriver.persistence.factory.SheetsQuickstart;
-
-import java.io.IOException;
-import java.security.GeneralSecurityException;
+import com.example.jordan.googlesheetsapidriver.persistence.Ledger;
+import com.example.jordan.googlesheetsapidriver.transport.Transaction;
+import com.example.jordan.googlesheetsapidriver.transport.TransactionType;
 
 public class Program {
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
-        SheetsQuickstart quickstart = new SheetsQuickstart();
+        Ledger ledger = new Ledger();
 
-        try
-        {
-            quickstart.DoThings();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        catch (GeneralSecurityException e)
-        {
-            e.printStackTrace();
-        }
+        Transaction first = new Transaction(TransactionType.Deposit, "Jordan", "", "Hello world!", 45.78f);
+
+        ledger.SaveTransaction(first);
     }
 }

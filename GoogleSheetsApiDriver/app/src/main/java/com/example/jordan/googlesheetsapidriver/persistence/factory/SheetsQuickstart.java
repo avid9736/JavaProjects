@@ -1,3 +1,4 @@
+/*
 package com.example.jordan.googlesheetsapidriver.persistence.factory;
 
 import com.google.api.client.auth.oauth2.Credential;
@@ -21,6 +22,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
 public class SheetsQuickstart {
     public SheetsQuickstart()
     {}
@@ -33,6 +35,7 @@ public class SheetsQuickstart {
      * Global instance of the scopes required by this quickstart.
      * If modifying these scopes, delete your previously saved credentials/ folder.
      */
+/*
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
 
     /**
@@ -41,6 +44,7 @@ public class SheetsQuickstart {
      * @return An authorized Credential object.
      * @throws IOException If there is no client_secret.
      */
+/*
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         GoogleClientSecrets.Details details = new GoogleClientSecrets.Details();
@@ -93,3 +97,4 @@ public class SheetsQuickstart {
         }
     }
 }
+*/
