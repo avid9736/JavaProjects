@@ -53,12 +53,13 @@ public class SheetsQuickstart {
         GoogleClientSecrets clientSecrets = new GoogleClientSecrets().setInstalled(details);
 
         // Build flow and trigger user authorization request.
-        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
                 .setDataStoreFactory(new FileDataStoreFactory(new File(CREDENTIALS_FOLDER)))
                 .setAccessType("offline")
                 .build();
-        return new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
+
+        return new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver())
+                .authorize("user");
     }
 
     public void DoThings() throws IOException, GeneralSecurityException {
