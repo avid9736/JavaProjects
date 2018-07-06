@@ -11,9 +11,8 @@ public class CompositeValidator<T> implements IValidate<T>
 {
     final List<IValidate<T>> _innerValidators;
 
-    public CompositeValidator(List<IValidate<T>> innerValidators) throws ValidationException
+    public CompositeValidator(List<IValidate<T>> innerValidators)
     {
-        if (innerValidators == null) throw new ValidationException("innerValidators cannot be null");
         _innerValidators = innerValidators;
     }
 

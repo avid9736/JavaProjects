@@ -7,11 +7,9 @@ import com.example.jordan.googlesheetsapidriver.infrastructure.IMapper;
 import com.example.jordan.googlesheetsapidriver.transport.Transaction;
 import com.google.api.services.sheets.v4.model.ValueRange;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class TransactionMapper implements IMapper<Transaction, ValueRange>
 {
@@ -21,20 +19,17 @@ public class TransactionMapper implements IMapper<Transaction, ValueRange>
     @Override
     public ValueRange Map(Transaction transaction)
     {
-        List<Object> values = Arrays.asList(
+        List<Object> values = new ArrayList<>(Arrays.asList(
                 transaction.TransactionType.toString(),
                 transaction.PaidBy,
                 transaction.TransferTo,
                 transaction.Notes,
-                transaction.Date.toString());
+                transaction.Date.toString()));
 
         List<Object> amounts = _amountMapper.Map(transaction);
+        values.addAll(amounts);
 
-        List<Object> allValues = Stream.of(values, amounts)
-                .flatMap(Collection::stream)
-                .collect(Collectors.toList());
-
-        return ToValueRange(allValues);
+        return ToValueRange(values);
     }
 
     ValueRange ToValueRange(List<Object> values)

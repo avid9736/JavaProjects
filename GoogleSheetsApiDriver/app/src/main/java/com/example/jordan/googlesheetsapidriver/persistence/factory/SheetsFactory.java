@@ -3,6 +3,7 @@ package com.example.jordan.googlesheetsapidriver.persistence.factory;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 
+import com.example.jordan.googlesheetsapidriver.domainmodel.exceptions.ValidationException;
 import com.example.jordan.googlesheetsapidriver.infrastructure.Lazy;
 import com.example.jordan.googlesheetsapidriver.persistence.configuration.GoogleApiClientConfiguration;
 import com.google.api.client.auth.oauth2.Credential;
@@ -20,24 +21,19 @@ import com.google.api.services.sheets.v4.SheetsScopes;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 
 public class SheetsFactory implements ISheetsFactory
 {
     final String _applicationName = "GoogleSheetApiDriver";
-    final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+    final NetHttpTransport HTTP_TRANSPORT = BuildNetHttpTransport();
     final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS);
-    Lazy<Credential> _credential = new Lazy<>(() -> {
-        try {
-            return BuildCredential();
-        } catch (IOException e) {
-            return null;
-        }
-    });
+    Lazy<Credential> _credential = new Lazy<>(() -> BuildCredential());
 
-    public SheetsFactory() throws Exception {}
+    public SheetsFactory() throws ValidationException {}
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public Sheets BulidSheets()
@@ -49,12 +45,38 @@ public class SheetsFactory implements ISheetsFactory
         return sheets;
     }
 
-    Credential BuildCredential() throws IOException
+    NetHttpTransport BuildNetHttpTransport() throws ValidationException
     {
-        GoogleAuthorizationCodeFlow flow = BuildFlow();
-        AuthorizationCodeInstalledApp app = new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver());
+        try
+        {
+            return GoogleNetHttpTransport.newTrustedTransport();
+        }
+        catch (GeneralSecurityException e)
+        {
+            throw new ValidationException("Some kind of security exception!", e);
+        }
+        catch (IOException e)
+        {
+            throw new ValidationException("Some kind of IO exception!", e);
+        }
+    }
 
-        return app.authorize("jordan.selinger@gmail.com");
+    Credential BuildCredential()
+    {
+        try
+        {
+            GoogleAuthorizationCodeFlow flow = BuildFlow();
+            AuthorizationCodeInstalledApp app = new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver());
+
+            return app.authorize("jordan.selinger@gmail.com");
+        }
+        catch (IOException e)
+        {
+            // This is not good
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     GoogleAuthorizationCodeFlow BuildFlow() throws IOException

@@ -4,5 +4,5 @@ import com.example.jordan.googlesheetsapidriver.domainmodel.exceptions.Validatio
 
 public interface IValidate<T>
 {
-    void Validate(T value) throws ValidationException;
+    void Validate(T value) throws ValidationException;//TODO what do //throws ValidationException;
 }

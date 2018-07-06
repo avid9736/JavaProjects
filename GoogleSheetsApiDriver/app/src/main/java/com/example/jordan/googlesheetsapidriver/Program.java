@@ -1,33 +1,28 @@
 package com.example.jordan.googlesheetsapidriver;
 
-import com.example.jordan.googlesheetsapidriver.persistence.Ledger;
-import com.example.jordan.googlesheetsapidriver.transport.Transaction;
-import com.example.jordan.googlesheetsapidriver.transport.TransactionType;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 
-import java.io.IOException;
+import com.example.jordan.googlesheetsapidriver.domainmodel.exceptions.ValidationException;
 
-public class Program {
-    public static void main(String[] args) throws Exception
+public class Program
+{
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public static void main(String[] args)
     {
-        Ledger ledger = new Ledger();
+        try
+        {
+            HouseAccount houseAccount = HouseAccountBulider.Build();
 
-        SaveTransaction(ledger, TransactionType.Deposit, "Jordan", "", "Hello world!", 45.78f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Dylan", "", "", 345.85f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Donald", "", "", 445.78f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Emilio", "", "", 852.687f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Sean", "", "", 45.78f);
-        SaveTransaction(ledger, TransactionType.Transfer, "Jordan", "Donald", "Hello world!", 20.00f);
-        SaveTransaction(ledger, TransactionType.Rent, "", "", "Hello world!", 45.78f);
-        SaveTransaction(ledger, TransactionType.Groceries, "Jordan", "", "Hello world!", 45.78f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Jordan", "", "Hello world!", 45.78f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Jordan", "", "Hello world!", 45.78f);
-        SaveTransaction(ledger, TransactionType.Deposit, "Jordan", "", "Hello world!", 45.78f);
-    }
-
-    static void SaveTransaction(Ledger ledger, TransactionType type, String paidBy, String transferTo, String notes, float amount) throws IOException
-    {
-        Transaction transaction = new Transaction(type, paidBy, transferTo, notes, amount);
-
-        ledger.SaveTransaction(transaction);
+            houseAccount.Deposit("Jordan", 5000.00f);
+            houseAccount.Groceries("Sean", 375.12f);
+            houseAccount.Rent("May Rent");
+            houseAccount.Transfer("Jordan", "Sean", 375.12f);
+            houseAccount.Withdrawl("Jordan",150.00f);
+        }
+        catch (ValidationException e)
+        {
+            e.printStackTrace();
+        }
     }
 }

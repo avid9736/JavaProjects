@@ -1,5 +1,6 @@
 package com.example.jordan.googlesheetsapidriver.persistence;
 
+import com.example.jordan.googlesheetsapidriver.domainmodel.exceptions.ValidationException;
 import com.example.jordan.googlesheetsapidriver.infrastructure.IMapper;
 import com.example.jordan.googlesheetsapidriver.persistence.configuration.SpreadsheetConfiguration;
 import com.example.jordan.googlesheetsapidriver.persistence.factory.ISheetsFactory;
@@ -17,18 +18,27 @@ public class Ledger implements ILedger
     final ISheetsFactory factory = new SheetsFactory();
     final IMapper<Transaction, ValueRange> _mapper = new TransactionMapper();
 
-    public Ledger() throws Exception
-    {}
+    public Ledger() throws ValidationException {}
 
-    public void SaveTransaction(Transaction transaction) throws IOException
+    public void SaveTransaction(Transaction transaction) throws ValidationException
     {
         Sheets sheets = factory.BulidSheets();
         ValueRange data = _mapper.Map(transaction);
 
-        Sheets.Spreadsheets.Values.Append append = sheets.spreadsheets().values()
-                .append(_config.SpreadsheetId, _config.SpreadsheetRange, data);
-        append.setValueInputOption("USER_ENTERED");
+        Sheets.Spreadsheets.Values.Append append;
 
-        append.execute();
+        try
+        {
+            append = sheets.spreadsheets().values()
+                    .append(_config.SpreadsheetId, _config.SpreadsheetRange, data);
+
+            append.setValueInputOption("USER_ENTERED");
+
+            append.execute();
+        }
+        catch (IOException e)
+        {
+            throw new ValidationException("Some kind of IO exception!", e);
+        }
     }
 }

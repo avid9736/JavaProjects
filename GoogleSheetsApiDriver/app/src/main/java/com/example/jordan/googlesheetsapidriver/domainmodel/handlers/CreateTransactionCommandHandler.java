@@ -6,25 +6,19 @@ import com.example.jordan.googlesheetsapidriver.domainmodel.validators.IValidate
 import com.example.jordan.googlesheetsapidriver.persistence.ILedger;
 import com.example.jordan.googlesheetsapidriver.transport.Transaction;
 
-import java.io.IOException;
-
 public class CreateTransactionCommandHandler implements ICommandHandler<CreateTransactionCommand>
 {
     private final ILedger _ledger;
     private final IValidate<Transaction> _validator;
 
-    public CreateTransactionCommandHandler(ILedger Ledger, IValidate<Transaction> Validator) throws ValidationException
+    public CreateTransactionCommandHandler(ILedger Ledger, IValidate<Transaction> Validator)
     {
-        if (Ledger == null) throw new ValidationException("Ledger cannot be null");
-        if (Validator == null) throw new ValidationException("Validator cannot be null");
-
         _validator = Validator;
         _ledger = Ledger;
     }
 
-    public void Handle(CreateTransactionCommand createTransactionCommand) throws Exception
+    public void Handle(CreateTransactionCommand createTransactionCommand) throws ValidationException
     {
-        if (createTransactionCommand == null) throw new ValidationException("Command cannot be null");
         Transaction transaction = createTransactionCommand.Transaction;
 
         _validator.Validate(transaction);

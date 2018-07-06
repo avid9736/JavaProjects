@@ -23,16 +23,16 @@ public class AmountMapper implements IMapper<Transaction, List<Object>>
 
     List<Object> OnlyDeposit(Transaction transaction)
     {
-        return Arrays.asList(transaction.Amount, "");
+        return Arrays.asList(transaction.Amount.toString(), "");
     }
 
     List<Object> OnlyWithdrawl(Transaction transaction)
     {
-        return Arrays.asList("", transaction.Amount);
+        return Arrays.asList("", transaction.Amount.toString());
     }
 
     List<Object> Both(Transaction transaction)
     {
-        return Arrays.asList(transaction.Amount, transaction.Amount);
+        return Arrays.asList(transaction.Amount.toString(), transaction.Amount.toString());
     }
 }
